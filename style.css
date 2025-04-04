@@ -1,0 +1,548 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+header{
+	width: 100%;
+	height: 64px;
+	background-color: #000000;
+	position: sticky;
+	top: 0;
+}
+
+nav{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	justify-content: space-between;
+
+
+
+}
+
+.navleft img{
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+	background-color: whitesmoke;
+	border-radius: 50%;
+
+}
+ 
+.homeIcon{
+ 	height: 50px;
+ 	width: 50px;
+ 	border-radius: 50%;
+ 	background-color: #1f1f1f;
+ 	margin-left: 25px;
+ 	position: relative;
+ }
+ .homeIcon i{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    font-size: 21px;
+    color: #FFFFFF;
+ }
+  form{
+  	background-color: #1f1f1f;
+/*  border: solid 2px gray;*/
+  	margin-left: 14px;
+  	padding: 10px;
+  	border-radius: 25px;
+  	width: 464px;
+  	box-shadow: 0px 0px 4px 1px gray;
+	border: 2px solid transparent; /* Initially No Border */
+	transition: border 0.3s ease; /* Smooth Effect */
+
+}
+  
+form:focus-within {
+	border: 2px solid white; /* Highlight Border */
+  }
+
+.searchSong{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+
+}
+.searchSong input{
+	width: 100%;
+	padding: 7px;
+	border: none;
+	background: #1f1f1f;
+	border-right: solid 1px lightgray;
+}
+
+form input:focus{
+	
+		outline: none;
+		border: none;
+		font-size: 16px;
+		color: white;
+
+	
+}
+
+.searchSong i {
+	color: lightgray;
+	font-size: 21px;
+}
+
+.searchSong input::placeholder{
+	color: lightgray;
+	font-size: 16px;
+}
+.navleft{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navRight{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	margin-right: 100px;
+}
+
+.navRight ul{
+	display: flex;
+	gap: 18px;
+	border-right: solid 1px lightgray;
+
+}
+.boderline{
+	margin-right: 21px;
+}
+.navRight ul li a{
+	color: lightgrey;
+	font-size: 16px;
+	font-weight: 700;
+}
+.btn{
+	display: flex;
+	gap: 0px;
+}
+
+.btn button{
+	margin-right: 10px;
+	padding: 7px;
+	background: transparent;
+	color: lightgray;
+	border: none;
+	font-size: 18px;
+}
+
+.btn button i{
+	font-size: 18px;
+
+}
+
+.loginBtn button{
+	padding: 13px;
+	width: 110px;
+	background-color: white;
+	border-radius: 25px;
+	color: black;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 50px;
+}
+
+.heroMidSection{
+	width: 100%;
+	height: 80vh;
+	background-color: black;
+	padding: 7px;
+	display: flex;
+	gap: 5px;
+	position: relative;
+}
+
+.heroleft{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 24%;
+	height: 99%;
+	background-color: #1f1f1f;
+	padding: 15px;
+	margin: 0px 5px;
+	border-radius: 10px;
+	/* position: fixed; */
+}
+
+.heroleftContent{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.heroleftContent h3{
+	color: white;
+}
+
+.heroleftContent i{
+	color: white;
+}
+
+.heroleftContent i:hover {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 332px;
+    transform: translate(-50%, -50%); 
+}
+
+.playListCard{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: 330px;	
+	background-color: black;
+	margin-top: 34px;
+	padding: 10px;
+	overflow-y: scroll;
+}
+
+.plylist{
+	width: 100%;
+	height: 150px;
+	background-color:#1f1f1f;
+	border-radius: 10px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: start;
+}
+.plylist h3, p{
+	font-size: 18px;
+	color: white;
+}
+
+.plylist button{
+	padding: 10px;
+	background-color: white;
+	color: black;
+	font-weight: 700;
+	border-radius: 25px;
+	margin-top: 15px;
+	width: 134px;
+}
+
+.listContent{
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+}
+
+.list1 ul,.list2 ul{
+	display: flex;
+	gap: 20px;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+.list1 ul a,.list2 ul a{
+	font-size: 13px;
+	color: lightgray;
+}
+
+.lgBtn button{
+	
+	padding: 8px;
+	background-color: transparent;
+	border: solid 1px #ccc;
+	border-radius: 20px;
+	color: white;
+	margin-left: 24px;
+	margin-top: 10px;
+	width: 100px;
+}
+
+.lgBtn i{
+	margin-right: 10px;
+}
+
+.heroright{
+	flex-grow: 1;
+	background-color: #1f1f1f;
+	border-radius:10px;
+	padding: 25px 10px;
+	overflow-y: scroll;
+	height: 99%;
+}
+
+.heroRightHeading{
+	display: flex;
+	justify-content: space-between;
+	padding: 7px;
+	margin-bottom: 10px;
+}
+
+.heroRightHeading h2 {
+	color: white;
+}
+
+.heroRightHeading ul li a{
+	color: lightgray;
+}
+
+.heroRightHeading ul li a:hover{
+	text-decoration: underline;
+
+}
+.trandingCard{
+	display: flex;
+	width: 100%;
+	/* max-height: 265px; */
+	padding: 10px;
+	margin-top: 12px;
+	flex-wrap: wrap;
+	padding-bottom: 10px;
+}
+
+.trandingCardUi{
+	height: 100%;
+	flex-basis: 14%;
+	background-color: transparent;
+	padding: 6px;
+	padding-bottom: 12px;
+	
+}
+
+.trandingCardUi img{
+	width: 100%;
+	height: 70%;
+	border-radius: 10px;
+	position: relative;
+	position: relative;
+}
+.trandingCardUi p{
+	font-size: 12px;
+	color: lightgray;
+	padding-bottom: 6px;
+	margin-top: 3px;
+}
+
+.trandingCardUi h3{
+	color: white;
+	font-size: 16px
+}
+.trandingCardUi:hover{
+	background-color: #1a1818;
+	border-radius: 10px;
+}
+
+.heroRightHeading h2:hover{
+	text-decoration: underline;
+}
+
+.PopelarArtistcard img{
+	width: 80%;
+	border-radius: 50%;
+}
+
+.PopelarArtistcard h3{
+	color: white;
+	font-size: 21px;
+	padding-top: 10px;
+}
+
+.PopelarArtistcard p{
+	font-size: 16px;
+	color: lightgray;
+	padding-bottom: 10px;
+}
+
+.PopelarArtistcard{
+	width: 14%;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	height: 220px; 
+	gap: 10px;
+}
+
+
+.PopelarArtistcard:hover{
+	background-color:#1a1818;
+	border-radius: 15px;
+}
+
+
+.signupPopSection{
+	width: 100%;
+	height: 70px;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,111,1) 35%, rgba(0,193,255,1) 100%);
+	/* background: linear-gradient(135deg, #1db954, #191414); */
+
+
+}
+
+
+.signupPopMid{
+	max-width: 1470px;
+	margin: auto;
+	height: 100%;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.signupPopMidLeft{
+	flex-basis: 50%;
+}
+.signupPopMidLeft h4 {
+	color: white;
+}
+.signupPopMidLeft p{
+	color: white;
+	margin-top: 10px;
+}
+.signupPopMidRight{
+	flex-basis: 50%;
+	display: flex;
+	justify-content: end;
+	
+}
+
+.signupPopMidRight button{
+	padding: 12px;
+	width: 170px;
+	margin-left: 550px;
+	border-radius: 24px;
+	border: none;
+	font-size: 18px;
+	font-weight: 700;
+	transition: transform 0.3s ease-in-out;
+
+}
+
+.signupPopMidRight button:hover{
+    transform: scale(1.1); 
+}
+
+.footerSection{
+	padding: 12px;
+}
+
+
+footer {
+    background-color: transparent;
+    color: white;
+    padding: 40px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #1db954; /* Spotify Green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
